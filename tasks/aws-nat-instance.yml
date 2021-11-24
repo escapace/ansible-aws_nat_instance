@@ -4,8 +4,3 @@
   copy: src=files/1005-aws-nat-instance.conf dest=/etc/ferm/ferm.d/1005-aws-nat-instance.conf owner=root group=root mode=0600
   notify:
     - ferm restart
-
-- name: copy aws-nat-instance ferm var files
-  copy: src=files/1005-aws-vpc.conf dest=/etc/ferm/vars.d/1005-aws-vpc.conf owner=root group=root mode=0600
-  notify:
-    - ferm restart
