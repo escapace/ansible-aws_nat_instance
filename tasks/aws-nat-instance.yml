@@ -2,5 +2,3 @@
 
 - name: copy aws-nat-instance ferm conf files
   copy: src=files/1005-aws-nat-instance.conf dest=/etc/ferm/ferm.d/1005-aws-nat-instance.conf owner=root group=root mode=0600
-  notify:
-    - ferm restart
