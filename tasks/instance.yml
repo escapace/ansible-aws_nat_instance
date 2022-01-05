@@ -1,0 +1,4 @@
+---
+
+- name: copy aws-nat-instance ferm conf files
+  copy: src=files/ec2-nat.conf dest=/etc/ferm/ferm.d/1010-ec2-nat.conf owner=root group=root mode=0600

@@ -2,4 +2,4 @@
 # tasks file for escapace.aws_nat_instance
 
 - include_tasks: aws-nat-instance.yml
-  when: ansible_os_family == "RedHat"
+  when: ansible_os_family == "RedHat" and provider is defined and provider == "ec2"
